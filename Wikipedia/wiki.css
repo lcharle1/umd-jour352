@@ -1,0 +1,29 @@
+h1{
+    font-family:'Times New Roman', Times, serif;
+}
+h2{
+    font-family: 'Times New Roman', Times, serif; 
+}
+h2 {
+    border-bottom:#000000;
+}
+body {
+    background-color:#EEEEEE; font-family:'Times New Roman', Times, serif;
+  }
+h3 {
+    font-size: x-small;
+}long
+
+div{
+  padding-top:20px;
+  padding-bottom:20px;
+  padding-right:10px;
+  padding-left:10px;
+}
+
+short
+
+div{
+  padding: 20px 10px; 
+    /*top/bottom left/right*/
+}
