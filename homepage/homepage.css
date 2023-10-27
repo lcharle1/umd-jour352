@@ -1,0 +1,13 @@
+body{
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    background-color: #ffd1a4;
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
+}
+
+header {
+    text-align: center;
+}
