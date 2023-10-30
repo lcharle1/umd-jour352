@@ -1,13 +1,20 @@
 body{
     font-size: 16px;
     font-family: 'Lato', sans-serif;
-    background-color: #ffd1a4;
+    background-color: #ddb59a;
 }
 
 h1{
     font-family: 'Playfair Display', serif;
 }
+h2{
+    font-family: 'Playfair Display', serif;
+}
 
 header {
     text-align: center;
+}
+h3{
+    font-family: 'Playfair Display', serif; 
+    font: size 12px;;
 }
