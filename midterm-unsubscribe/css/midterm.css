@@ -1,0 +1,111 @@
+body{ 
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.header{
+    min-height: 100vh;
+    font-family: 'Inconsolata', monospace;
+    color:white;
+    background-color: black;
+
+} 
+
+.black-container{
+background-color: black;
+color:#FCFDFE;
+padding:5em;
+margin-bottom: 20px;
+margin-top: 20px;
+}
+
+.main {
+    background-color: #FCFDFE;
+}
+.center-container{
+font-size:medium
+}
+
+.three-hundred{
+padding: 1em;
+background-color:beige;
+}
+
+.container{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.a-container{
+text-align:center;
+font-size: 1.1em;
+}
+.results-section{
+    margin: 4em 0;
+}
+.container-head{
+font-size: small;
+text-align:center;
+padding: 10em;
+}
+
+h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+ }
+
+ h1, 
+ h2, 
+ h3 {
+font-family: 'Inconsolata', monospace;
+ }
+
+.header{
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    font-size: 1.5em;
+  }
+
+h1{
+    font-weight: 700;
+    font-size: 4em; 
+}
+
+h2{
+    font-weight: 700;
+    font-size: 1.75em;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+.subhead{
+    font-weight: 500px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.byline {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    font-size: .62em; 
+  }
+  
+.blockquote {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    font-size: 1em;
+    color: #db546d;
+  }
+
+ .card-footer{
+    font-size: 1em;
+ }
+ 
+ 

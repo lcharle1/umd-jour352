@@ -4,17 +4,30 @@ body{
     background-color: #ddb59a;
 }
 
-h1{
+h1,
+h2, 
+h3{
     font-family: 'Playfair Display', serif;
 }
-h2{
-    font-family: 'Playfair Display', serif;
-}
+
 
 header {
     text-align: center;
 }
 h3{
-    font-family: 'Playfair Display', serif; 
-    font: size 12px;;
+   /* font-family: 'Playfair Display', serif; */
+    font-size: .75em;;
+}
+
+a{
+    color: black
+}
+
+section{
+    margin: 4em 0;
+}
+
+header{
+    margin: 2em 0;
+    padding: 2em 0;
 }
