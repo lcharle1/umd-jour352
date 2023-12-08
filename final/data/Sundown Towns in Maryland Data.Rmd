@@ -1,0 +1,88 @@
+---
+title: "Sundown Towns in Maryland"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code.
+
+Try exe
+
+cuting this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*.
+
+**Libraries**
+
+```{r}
+#Libraries
+library(readr)
+library(janitor)
+library(tidyverse)
+library(corrr)
+library(readr)
+library(tidytext)
+library(rvest)
+library(janitor)
+library(lubridate)
+library(tidyverse)
+library(tidycensus)
+library(tigris)
+```
+
+**Pulling dataframe**
+
+```{r}
+Sundown_Town_Data <- read_csv("Final Project - Sundown town.csv")
+View(Sundown_Town_Data)
+
+```
+
+**Clean**
+
+```{r}
+Sundown_Town_Data |> 
+  clean_names()
+```
+
+**Lowercase Rows**
+
+```{r}
+Sundown_Town_Data$County <- tolower(Sundown_Town_Data$County)
+
+Sundown_Town_Data
+
+```
+
+**Groups Excluded**
+
+*Which demographic does each town exclude?*
+
+```{r}
+Sundown_Town_Data |>
+  group_by(`Groups Excluded`, Town)|>
+  summarize( total = n())
+```
+
+```{r}
+Sundown_Town_Data |>
+  group_by(`Groups Excluded`)|>
+  filter(str_detect( `Groups Excluded`, "Black"))|>
+  filter(str_detect(`Groups Excluded`, "Jewish"))|>
+  filter(str_detect(`Groups Excluded`, "Other"))
+  
+```
+
+```{}
+```
+
+*How many times is each group excluded?* In total, black people are not welcomed in 21 towns/counties.
+
+```{r}
+Sundown_Town_Data |>
+  group_by(`Groups Excluded`)|>
+  summarize( total = n())
+
+#filter, str_detect(colname), black or jewish  or other specifically
+```
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
