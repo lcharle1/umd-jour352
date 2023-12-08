@@ -1,0 +1,24 @@
+body{ 
+    font-family: Quicksand; 
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://i.pinimg.com/564x/c7/dd/48/c7dd483a41abc6a0be1d522c699437ef.jpg);
+}
+
+.title{
+    margin-top: 30px;
+    text-align: center;
+}
+
+h1{
+    font-family: Diplomata SC;
+    font-size: 50px;
+}
+
+h2{
+    font-family: Asset;
+}
+
